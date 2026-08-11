@@ -15,7 +15,7 @@ This repository contains the curriculum for Code the Dream's Python for Data Ana
 
 ## Contributing
 
-Check out our contributing guidelines and code of conduct if you want to help out!
+Check out our [contributing guidelines](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/CONTRIBUTING.md) and [code of conduct](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/CODE_OF_CONDUCT.md) if you want to help out!
 
 ## Additional Links
 
