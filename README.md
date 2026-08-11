@@ -4,9 +4,14 @@
 
 This repository contains the curriculum for Code the Dream's Python for Data Analysis course, often known as Python 100.
 
-*Note on versions:*
+> [!note]
+> This is version 3 of Code the Dream's Python 100 course. Versions 1 & 2 were known as "Python Essentials," but because we added an optional "Python Intro" course, we renamed this course to avoid confusion.
 
-This is version 3 of Code the Dream's Python 100 course. Versions 1 & 2 were known as "Python Essentials," but because we added an optional "Python Intro" course, we renamed this course to avoid confusion.
+**Repo Structure**
+
+1. **Assignments** contains .md files for each weekly coding assignment.
+2. **Lessons** contains curriculum content. Each week is has a landing page (displayed in the Learns app) and sub-pages.
+3. **Mentor Guidebook** contains **summaries** of lesson content, **slides** for group sessions, and **answer-keys** for each weekly assignment.
 
 ## Contributing
 
@@ -14,4 +19,8 @@ Check out our contributing guidelines and code of conduct if you want to help ou
 
 ## Additional Links
 
-TBD
+* Homework repo (TBC)
+* [CTD Instructional Design Guidelines](https://docs.google.com/document/d/1u38QtHKfGeXwJf1yTYAyx0YK3yvit5dK6rhM0PZjx8c/edit?usp=sharing)
+* [Previous version of curriculum](https://github.com/Code-the-Dream-School/python-essentials-v2)
+
+If you have any questions, please contact Reid Russom (reid@codethedream.org) or Mary Alice Moore (maryalice@codethedream.org).
