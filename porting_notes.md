@@ -102,7 +102,7 @@ Each module carries: objective, guidance, a stage checklist, and common pitfalls
 ## Planned Weekly Structure
 
 | Week | Topic | Environment | Submission 1 | Submission 2 |
-||||||
+|---|---|---|---|---|
 | 1 | Advanced Python and Regex | `python_homework` + Kaggle setup | PR | Kaggle (setup check) |
 | 2 | Intro to Data Engineering with Pandas | Kaggle | Kaggle | — |
 | 3 | Data Cleaning and Validation | Kaggle | Kaggle | — |
@@ -115,13 +115,9 @@ Each module carries: objective, guidance, a stage checklist, and common pitfalls
 | 10 | Final Project: Pipeline and Analysis | Kaggle + project repo | Kaggle (analysis) | PR (`summary.md` + cleaned data) |
 | 11 | Final Project: Dashboard and Presentation | Project repo | PR | — |
 
-**LMS constraint:** two URLs per week maximum, each must be a GitHub PR or a Kaggle
-notebook. Weeks 5, 8, and 10 are at capacity — do not add a third deliverable to those
+**CTD Learns LMS constraint:** two URLs per week maximum, each must be a GitHub PR or a Kaggle
+notebook. Weeks 5, 8, and 10 are at capacity; do not add a third deliverable to those
 weeks without removing something.
-
-Deployed app URLs and the presentation video URL go in the project repo (`service_urls.txt`
-and the README), not in the submission form. This keeps every graded submission a PR or a
-Kaggle link.
 
 **Environments**
 
@@ -359,7 +355,7 @@ re-taught `.loc`/`.iloc` selection already covered in 4.1, and was marked "Optio
 reads as an admission of redundancy.
 
 | Content | From | To |
-||||
+|---|---|---|
 | `fillna` strategies, `ffill`/`bfill` | L4.1 | Week 3.1 |
 | `str.strip()`, case normalization | L4.1 | Week 3.4 |
 | `to_datetime`, `errors="coerce"` | L4.1 | Week 3.2 |
