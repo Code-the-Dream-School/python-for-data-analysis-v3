@@ -23,9 +23,11 @@ weeks with new content.
    guidelines).
 3. Make small improvements to language clarity, assessment design, and mentor resources.
 
+
+
 ## Page Structure and Conventions
 
-Mirrors Python Intro and Python for AI and Cloud.
+Mirrors Python Intro v1.
 
 ```
 lessons/
@@ -102,7 +104,7 @@ Each module carries: objective, guidance, a stage checklist, and common pitfalls
 ## Planned Weekly Structure
 
 | Week | Topic | Environment | Submission 1 | Submission 2 |
-|---|---|---|---|---|
+||||||
 | 1 | Advanced Python and Regex | `python_homework` + Kaggle setup | PR | Kaggle (setup check) |
 | 2 | Intro to Data Engineering with Pandas | Kaggle | Kaggle | — |
 | 3 | Data Cleaning and Validation | Kaggle | Kaggle | — |
@@ -115,13 +117,15 @@ Each module carries: objective, guidance, a stage checklist, and common pitfalls
 | 10 | Final Project: Pipeline and Analysis | Kaggle + project repo | Kaggle (analysis) | PR (`summary.md` + cleaned data) |
 | 11 | Final Project: Dashboard and Presentation | Project repo | PR | — |
 
-**CTD Learns LMS constraint:** two URLs per week maximum, each must be a GitHub PR or a Kaggle
-notebook. Weeks 5, 8, and 10 are at capacity; do not add a third deliverable to those
+**LMS constraint:** two URLs per week maximum, each must be a GitHub PR or a Kaggle
+notebook. Weeks 5, 8, and 10 are at capacity — do not add a third deliverable to those
 weeks without removing something.
 
-**Environments**
+Deployed app URLs and the presentation video URL go in the project repo (`service_urls.txt`
+and the README), not in the submission form. This keeps every graded submission a PR or a
+Kaggle link.
 
-Three places, each set up once:
+**Environments — three places, each set up once:**
 
 * `python_homework` (local, venv, created Week 1) — Weeks 1, 6, 9
 * Kaggle notebooks (account verified Week 1) — Weeks 2–5, 7–8, 10
@@ -129,6 +133,8 @@ Three places, each set up once:
 
 v2 had four environments with two of them scaffolded mid-course, including a brand-new
 repo built from scratch in the final week. Nothing in v3 is created after Week 5.
+
+
 
 ## Module Map
 
@@ -275,12 +281,17 @@ Busy week. Old Lesson 9 is the largest file in the course (32KB, twelve sections
    what belongs in SQL vs. Pandas. Short, but for a data course it's the most consequential
    idea of the week; burying it as section 9.11 of twelve badly undersold it.
 
+**This module stays on a raw `sqlite3` connection deliberately.** Students should feel the
+plain version before Week 8 shows the upgrade. Do not introduce SQLAlchemy here.
+
 **`sqlcommand.py`** becomes an optional extension page for students who want more SQL
 practice. Since the week now runs in Kaggle, the notebook-native equivalent is a helper
 function that takes a query string and returns a DataFrame — worth providing inline for
 everyone, with the interactive CLI version as the optional deeper path.
 
 ### Week 8 — Advanced SQL and Integration
+
+Five modules. Grew from four to accommodate SQLAlchemy.
 
 1. **Aggregation in Depth** — GROUP BY on multiple columns, `HAVING` vs. `WHERE`,
    aggregating across joins, joining to get readable names instead of ids.
@@ -289,10 +300,37 @@ everyone, with the interactive CLI version as the optional deeper path.
 3. **Window Functions and Dates** — `ROW_NUMBER`, `RANK`, running totals with
    `SUM() OVER`, `PARTITION BY`, plus SQLite date and time functions. Grouped because both
    are "SQL does more analysis than you assumed" and both feed the final project.
-4. **Writing Safe, Fast Queries** — SQL injection and why parameterization is the fix,
-   transactions and rollbacks in a real pipeline, indexing and when it helps.
+4. **Connecting with SQLAlchemy** — `create_engine()`, database URLs, why the connection
+   string is the only thing that changes when a project outgrows SQLite, `pd.read_sql_query`
+   and `df.to_sql` against an engine, and `engine.connect()` vs. `engine.begin()`. Closes
+   with the ORM preview (see below).
+5. **Safe and Reliable Queries** — Parameterization and SQL injection shown in both dialects,
+   transactions and rollbacks, indexing and when it helps.
 
-**Note:** transactions appear conceptually in 7.1 and practically in 8.4. Have the modules
+**The framing for SQLAlchemy must be accurate.** Pandas has *not* dropped support for raw
+`sqlite3` connections — they work with no error and no deprecation warning on current pandas.
+Do not write "modern Pandas expects a SQLAlchemy engine"; a student who later uses `sqlite3`
+and watches it work will conclude the lesson was wrong. The accurate motivation is stronger:
+pandas special-cases SQLite, and SQLAlchemy is the path that works for every database.
+
+**SQLAlchemy is not automatically safe from injection.** An f-string interpolated into
+`text()` injects exactly as readily as one interpolated into a `sqlite3` call — verified,
+see below. Safety comes from binding parameters, not from choosing the library. Module 5
+teaches parameterization as the technique, with the syntax shown in both dialects.
+
+**The ORM appears as a demonstration only.** Show the Week 7 `CREATE TABLE` and its
+`DeclarativeBase` equivalent side by side, then run `Base.metadata.create_all(engine)` and
+inspect the generated tables. The point is that the class is a second notation for something
+students already built, not a new abstraction. It is **not** in the assignment, **not** in
+the rubric, and **not** a prerequisite for the Week 8 project milestone or the final project.
+Nothing downstream may assume it.
+
+**Rationale for that constraint:** there is no OOP anywhere in this track. Python Intro's
+objectives contain no classes, and Py100 v2 contains no class definitions at all. A student
+reaching Week 8 has never written `class Anything:`. A read-only demonstration is fine; a
+requirement would be cargo-cult programming.
+
+**Note:** transactions appear conceptually in 7.1 and practically in 8.5. Have the modules
 reference each other explicitly so it doesn't read as duplication.
 
 ### Week 9 — Interactive Visualization and Dashboards
@@ -355,7 +393,7 @@ re-taught `.loc`/`.iloc` selection already covered in 4.1, and was marked "Optio
 reads as an admission of redundancy.
 
 | Content | From | To |
-|---|---|---|
+||||
 | `fillna` strategies, `ffill`/`bfill` | L4.1 | Week 3.1 |
 | `str.strip()`, case normalization | L4.1 | Week 3.4 |
 | `to_datetime`, `errors="coerce"` | L4.1 | Week 3.2 |
@@ -434,6 +472,112 @@ problem in the last 48 hours cascades into a missing presentation. Decoupling th
 deployment issue costs a rubric line, not a graduation.
 
 
+
+## Verified Code Patterns (SQLAlchemy)
+
+**Do not draft this section's code from tutorials, blog posts, or an AI assistant's memory.**
+SQLAlchemy 1.4 and 2.0 differ in ways that produce code which either fails outright or
+silently teaches the wrong thing, and the older style dominates the material that's findable
+online. Everything below was executed and confirmed against **SQLAlchemy 2.0.52 / pandas
+3.0.2**.
+
+### Version hazards
+
+| Hazard | 1.4 and earlier | 2.0+ |
+||||
+| Executing SQL | `engine.execute(...)` works | **`engine.execute()` does not exist** — raises `AttributeError`. Use a connection context manager |
+| Declarative base | `Base = declarative_base()` | `class Base(DeclarativeBase): pass` — `DeclarativeBase` does not exist before 2.0 |
+| Column definitions | `Column(Integer, primary_key=True)` | `mapped_column(...)` |
+
+**Verify the SQLAlchemy version in the current Kaggle image before writing any of this,** and
+pin it in the lesson if it isn't 2.0+. If Kaggle ships 1.4, every snippet below needs the
+older spelling and the `DeclarativeBase` demo is impossible as written. One cell settles it:
+
+```python
+import sqlalchemy; print(sqlalchemy.__version__)
+```
+
+### Engine and pandas
+
+```python
+from sqlalchemy import create_engine
+import pandas as pd
+
+engine = create_engine("sqlite:///db/project.db")
+# The only thing that changes for a different database is this string:
+# create_engine("postgresql://user:pass@host:5432/dbname")
+
+df.to_sql("sales", engine, if_exists="replace", index=False)
+df = pd.read_sql_query("SELECT * FROM sales", engine)
+```
+
+Use `engine.connect()` for reads and `engine.begin()` for writes — `begin()` commits when the
+block exits, `connect()` does not.
+
+```python
+from sqlalchemy import text
+
+with engine.begin() as conn:                      # commits on exit
+    conn.execute(text("CREATE TABLE users (id INTEGER, name TEXT)"))
+
+with engine.connect() as conn:                    # read-only
+    rows = conn.execute(text("SELECT * FROM users")).fetchall()
+```
+
+### Parameterization and injection
+
+Confirmed behavior with `evil = "1 OR 1=1"` against a two-row table:
+
+```python
+# VULNERABLE — returns both rows. SQLAlchemy does not save you here.
+conn.execute(text(f"SELECT * FROM users WHERE id = {evil}"))
+
+# SAFE — returns zero rows. The bound parameter is never parsed as SQL.
+conn.execute(text("SELECT * FROM users WHERE id = :uid"), {"uid": evil})
+```
+
+The `sqlite3` equivalent, for the side-by-side comparison:
+
+```python
+cur.execute("SELECT * FROM users WHERE id = ?", (evil,))
+```
+
+### ORM demonstration
+
+Both the annotated and non-annotated forms generate identical tables. **Use the
+non-annotated form** — the 2.0 documented default relies on `Mapped[]` type annotations, and
+type hints are another concept absent from the Intro course. One new idea is enough.
+
+```python
+from sqlalchemy import create_engine, Integer, String, ForeignKey, inspect
+from sqlalchemy.orm import DeclarativeBase, mapped_column
+
+engine = create_engine("sqlite:///db/demo.db")
+
+class Base(DeclarativeBase):
+    pass
+
+class Magazine(Base):
+    __tablename__ = "magazines"
+    id = mapped_column(Integer, primary_key=True)
+    name = mapped_column(String(80), nullable=False)
+
+class Publisher(Base):
+    __tablename__ = "publishers"
+    id = mapped_column(Integer, primary_key=True)
+    name = mapped_column(String(80), nullable=False)
+    magazine_id = mapped_column(ForeignKey("magazines.id"))
+
+Base.metadata.create_all(engine)          # this is what generates the CREATE TABLE
+print(inspect(engine).get_table_names())  # ['magazines', 'publishers']
+```
+
+Pair this with the `CREATE TABLE` statement students wrote in Week 7.2 so the mapping between
+the two notations is visible line by line, and use `create_all` plus `inspect` to prove the
+class produced the same table.
+
+
+
 ## Open Work Items
 
 1. **Rubric rewrite.** One project means one rubric, split so Phase 1 and Phase 2 are each
@@ -450,3 +594,12 @@ deployment issue costs a rubric line, not a graduation.
 5. **Standardize the "run this in the Python interactive shell" framing.** It appears
    throughout old Lessons 4, 5, and 6 while every assignment is a notebook. Now that modules
    are separate pages, the inconsistency will be visible on nearly every one.
+6. **Contributing guidelines** for the repo, per sub-goal 2.
+7. **Confirm the SQLAlchemy version in the Kaggle image** before drafting Week 8, and pin it
+   in the lesson. Everything in Verified Code Patterns assumes 2.0+.
+8. **Track the OOP gap at the track level.** Python Intro teaches no classes, Py100 teaches
+   no classes, and the planned follow-up course has ML content — scikit-learn's interface is
+   class-based, and writing a custom transformer means subclassing. OOP needs a home somewhere
+   in Python for Cloud & AI or the Data Practicum. Not this course's problem to solve, but it
+   is the reason the ORM here has to stay a demonstration, and it will block more than the
+   ORM if it goes unaddressed.
