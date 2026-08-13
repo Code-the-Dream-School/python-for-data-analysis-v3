@@ -104,7 +104,7 @@ Each module carries: objective, guidance, a stage checklist, and common pitfalls
 ## Planned Weekly Structure
 
 | Week | Topic | Environment | Submission 1 | Submission 2 |
-||||||
+|---|---|---|---|---|
 | 1 | Advanced Python and Regex | `python_homework` + Kaggle setup | PR | Kaggle (setup check) |
 | 2 | Intro to Data Engineering with Pandas | Kaggle | Kaggle | — |
 | 3 | Data Cleaning and Validation | Kaggle | Kaggle | — |
