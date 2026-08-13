@@ -393,7 +393,7 @@ re-taught `.loc`/`.iloc` selection already covered in 4.1, and was marked "Optio
 reads as an admission of redundancy.
 
 | Content | From | To |
-||||
+|---|---|---|
 | `fillna` strategies, `ffill`/`bfill` | L4.1 | Week 3.1 |
 | `str.strip()`, case normalization | L4.1 | Week 3.4 |
 | `to_datetime`, `errors="coerce"` | L4.1 | Week 3.2 |
@@ -484,7 +484,7 @@ online. Everything below was executed and confirmed against **SQLAlchemy 2.0.52 
 ### Version hazards
 
 | Hazard | 1.4 and earlier | 2.0+ |
-||||
+|---|---|---|
 | Executing SQL | `engine.execute(...)` works | **`engine.execute()` does not exist** — raises `AttributeError`. Use a connection context manager |
 | Declarative base | `Base = declarative_base()` | `class Base(DeclarativeBase): pass` — `DeclarativeBase` does not exist before 2.0 |
 | Column definitions | `Column(Integer, primary_key=True)` | `mapped_column(...)` |
