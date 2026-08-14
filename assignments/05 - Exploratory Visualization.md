@@ -82,10 +82,10 @@ You have the tools for Phase 1 already - that is why the project starts now, whi
 
 Choose one of these four curated datasets. All four are available on Kaggle, so you can add them to a notebook with **Add Input** and no downloading:
 
-- **Global Superstore** — retail orders, sales, and profit across regions and categories.
-- **TMDB 5000 Movie Dataset** — movies with budget, revenue, genres, and ratings.
-- **Life Expectancy (WHO)** — health and economic indicators by country and year.
-- **Seattle Airbnb Open Data** — listings, prices, availability, and reviews.
+- **[Global Superstore](https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset)** — retail orders, sales, and profit across regions and categories.
+- **[TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)** — movies with budget, revenue, genres, and ratings.
+- **[Life Expectancy (WHO)](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who)** — health and economic indicators by country and year.
+- **[Seattle Airbnb Open Data](https://www.kaggle.com/datasets/airbnb/seattle)** — listings, prices, availability, and reviews.
 
 If you would prefer a different dataset, you may request approval for an alternative from your CIL before submitting your proposal.
 
