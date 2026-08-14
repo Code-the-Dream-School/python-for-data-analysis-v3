@@ -5,7 +5,7 @@
 * Select columns, rows, and single cells with `[]`, `.loc`, `.iloc`, `.at`, and `.iat`.
 * Explain how `.loc` and `.iloc` slicing differ.
 * Filter rows with boolean conditions, combining them safely with `&` and `|`.
-* Avoid the common `and`/`&` and `.str` traps that trip up beginners.
+* Avoid the common `and`/`&` and `.str` traps.
 * Count missing values with `isna().sum()` as a bridge into data cleaning.
 
 ---
