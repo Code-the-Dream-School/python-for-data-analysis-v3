@@ -180,6 +180,15 @@ Running the same five checks every time means you'll never start analyzing a dat
 
 ---
 
+### Video:
+
+* [Python Pandas Tutorial (Part 1): Getting Started with Data Analysis](https://www.youtube.com/watch?v=ZyhVh-qRZPA) — includes previewing and getting a first look at a dataset.
+
+> [!note]
+> There isn't a direct Corey Schafer analogue to this module, but the above video covers the key concepts.
+
+---
+
 ### AI Prompt: Predict-then-Check
 
 Reading a summary is a skill of its own. Study this `info()` output for a dataset with **1,000 rows** — *without* seeing the data itself:
