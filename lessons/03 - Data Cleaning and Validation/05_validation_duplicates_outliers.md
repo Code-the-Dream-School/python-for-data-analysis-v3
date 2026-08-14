@@ -15,7 +15,7 @@ The earlier modules fixed *format* — missing values, wrong types, messy text. 
 
 ## First, Keep a Raw Copy
 
-We flagged this back in Module 3.1, and now it earns its own step. Before you change anything, save an untouched copy of the original data:
+We mentioned this in Module 3.1; here it becomes its own step. Before you change anything, save an untouched copy of the original data:
 
 ```python
 raw_df = df.copy()   # never modified — your reference point
@@ -86,7 +86,7 @@ df = df.drop_duplicates(subset='Name')   # one row per Name
 
 ## Handling Outliers
 
-An **outlier** is a value far from the rest of the data. Unlike a range violation, an outlier isn't automatically wrong — and that's the crux of the module. A simple rule can flag them:
+An **outlier** is a value far from the rest of the data. Unlike a range violation, an outlier is not automatically wrong, which is the key point of this section. A straightforward rule can flag them:
 
 ```python
 # Replace clearly impossible ages with the median
@@ -98,7 +98,7 @@ But before you "fix" an outlier, ask whether it's an **error or a real extreme**
 * A recorded age of `150` is an error — no one is 150. Replace or remove it.
 * A customer who spent 100× the average might be a real high-value customer. Deleting them would erase your most important data point.
 
-The discipline: use outlier rules to *flag* extreme values, then apply domain judgment before changing anything. Blindly deleting outliers is one of the fastest ways to produce a clean-looking but misleading analysis — which is exactly why you kept that raw copy.
+Use outlier rules to *flag* extreme values, then apply domain judgment before changing anything. Deleting outliers without checking is a common way to produce a clean-looking but misleading analysis, which is one reason to keep the raw copy.
 
 ---
 
