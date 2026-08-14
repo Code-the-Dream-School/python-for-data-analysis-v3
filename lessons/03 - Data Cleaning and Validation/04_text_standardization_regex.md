@@ -9,7 +9,7 @@
 
 ---
 
-Text is the messiest data type. The same city might appear as `"New York"`, `"new york"`, and `" NEW YORK "`; a phone number might be written five different ways. To a computer these are all *different* values, so before you count, group, or match anything, you standardize the text first. This is where Week 1's regex practice pays off.
+Text is the messiest data type. The same city might appear as `"New York"`, `"new york"`, and `" NEW YORK "`; a phone number might be written five different ways. To a computer these are all *different* values, so before you count, group, or match anything, you standardize the text first. This is where Week 1's regex practice applies.
 
 Recall from Module 2.4 that string methods on a Series go through the `.str` accessor.
 
@@ -32,13 +32,13 @@ df['City'].value_counts()
 # Name: count, dtype: int64
 ```
 
-Without that one line, `value_counts()` would have reported four separate cities instead of two. **This is the "garbage in, garbage out" problem in miniature:** inconsistent casing and whitespace silently split what should be a single group, and every count, `groupby`, and merge downstream inherits the error.
+Without that one line, `value_counts()` would report four separate cities instead of two. Inconsistent casing and whitespace split what should be a single group, and every count, `groupby`, and merge that follows inherits the error.
 
 ---
 
 ## `map()` vs. `replace()`: the Silent `NaN` Trap
 
-Both `map()` and `replace()` can translate values using a dictionary — but they treat values that *aren't in the dictionary* completely differently, and getting this wrong quietly destroys data.
+Both `map()` and `replace()` can translate values using a dictionary, but they treat values that *aren't in the dictionary* completely differently, and getting this wrong can destroy data without producing an error.
 
 ```python
 df = pd.DataFrame({'City': ['LA', 'NY', 'Chicago']})
@@ -54,7 +54,7 @@ df['City'].replace({'LA': 'Los Angeles', 'NY': 'New York'})
 # 2        Chicago     ← replace() leaves unmapped values untouched
 ```
 
-* **`map()`** turns any value *not* in the dictionary into `NaN`. That's useful when you *want* unmapped values flagged as missing — but a disaster when you don't expect it.
+* **`map()`** turns any value *not* in the dictionary into `NaN`. This is useful when you *want* unmapped values flagged as missing, but a problem when you do not expect it.
 * **`replace()`** leaves unmapped values unchanged.
 
 The rule of thumb: use **`replace()`** when you're translating *some* values and want to keep the rest. Use **`map()`** with a dictionary only when the dictionary covers every value you intend to keep.
@@ -184,7 +184,7 @@ B) `map()` turns any value not in the dictionary into `NaN`. To keep `'NY'` unch
 <details>
 <summary>Answer</summary>
 
-B) Inconsistent text splits what should be one category into several, silently corrupting every count and group.
+B) Inconsistent text splits what should be one category into several, corrupting every count and group.
 
 </details>
 
