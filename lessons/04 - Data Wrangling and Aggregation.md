@@ -2,7 +2,7 @@
 
 **Lesson Overview**
 
-You've already learned how to load and clean data. This week, you'll learn how to reshape and combine it until it can answer the questions you want to ask. This process is called **data wrangling.** You'll summarize data by group, combine separate tables into one, reshape long data into readable grids, and engineer new columns that surface patterns the raw data hides.
+You've already learned how to load and clean data. This week, you will learn how to reshape and combine it until it can answer the questions you want to ask. This process is called **data wrangling.** You will summarize data by group, combine separate tables into one, reshape long data into readable grids, and engineer new columns that surface patterns the raw data hides.
 
 **Learning Objectives**
 
