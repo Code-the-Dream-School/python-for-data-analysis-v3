@@ -2,19 +2,19 @@
 
 **Objective**: By the end of this module, you will be able to:
 
-* Start from the *question* you're asking, not the chart you want to make.
+* Start from the question you're asking, rather than the chart you want to make.
 * Match the five common question types to the charts that answer them.
 * Recognize and avoid common chart mismatches.
 
 ---
 
-Before you write a single line of plotting code, answer one question: **what am I trying to show?** A chart is an answer, and different questions have different answers. Reaching for a chart type out of habit — a pie chart because it looks nice, a line because it's familiar — is the most common way visualizations end up misleading or confusing. This module has no code. It's about the thinking that comes *first*.
+Before you write potting code or choose charts, answer one question: **what am I trying to show?** A chart is a way to answer questions about data, and different questions have different answers. Reaching for a chart type out of habit (for example, a pie chart because it looks nice, or a line because it's familiar) is a common reason visualizations are confusing or don't produce the desired result.
 
 ---
 
 ## Start from the Question
 
-Almost every data question is one of five types. Name the type, and the chart follows:
+Almost every data question is one of five types. Decide on the type, and the chart follows:
 
 | I want to show… | Question type | Reach for… |
 |---|---|---|
@@ -26,11 +26,11 @@ Almost every data question is one of five types. Name the type, and the chart fo
 
 A few words on each:
 
-* **Comparison** — "Which region sold the most?" A **bar chart** puts categories side by side so their heights are easy to compare. Bars are the workhorse of comparison.
-* **Trend** — "How did revenue change over the year?" A **line chart** connects points in time order, so the shape of the line *is* the trend.
-* **Distribution** — "What's the spread of customer ages?" A **histogram** buckets values into ranges and shows how many fall in each; a **box plot** summarizes the median, spread, and outliers compactly.
-* **Relationship** — "Do higher-priced items get lower ratings?" A **scatter plot** puts one variable on each axis and lets you see whether the dots trend together. For many variables at once, a **correlation heatmap** shows every pair.
-* **Composition** — "What share of sales came from each category?" A **stacked bar** shows the parts within each whole and still lets you compare totals.
+* **Comparison**: "Which region sold the most?" A **bar chart** puts categories side by side so their heights are easy to compare. Bars are the workhorse of comparison.
+* **Trend**: "How did revenue change over the year?" A **line chart** connects points in time order, so the shape of the line *is* the trend.
+* **Distribution**: "What's the spread of customer ages?" A **histogram** buckets values into ranges and shows how many fall in each; a **box plot** summarizes the median, spread, and outliers compactly.
+* **Relationship**: "Do higher-priced items get lower ratings?" A **scatter plot** puts one variable on each axis and lets you see whether the dots trend together. For many variables at once, a **correlation heatmap** shows every pair.
+* **Composition**: "What share of sales came from each category?" A **stacked bar** shows the parts within each whole and still lets you compare totals.
 
 ---
 
