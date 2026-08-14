@@ -201,7 +201,7 @@ print(df.columns.tolist())
 # includes flattened columns like 'address.city' and 'address.zipcode'
 ```
 
-> **A good habit:** always check that the request succeeded before trusting the data. `response.raise_for_status()` will raise a clear error if the API returned a failure code, instead of letting a broken response flow silently into your DataFrame.
+> **A good habit: always check that the request succeeded before trusting the data. `response.raise_for_status()` will raise a clear error if the API returned a failure code, instead of letting a failed response pass unnoticed into your DataFrame.
 
 ---
 
