@@ -56,14 +56,11 @@ df['Height']
 # Name: Height, dtype: float64
 ```
 
-This is the everyday pattern for numeric columns that arrive as text: coerce first, then handle the resulting `NaN`s with the tools from Module 3.1. `errors="coerce"` is what connects the two modules — it *turns* bad values into the missing values you already know how to fill or drop.
+This is the common pattern for numeric columns that arrive as text: coerce first, then handle the resulting `NaN`s with the tools from Module 3.1. `errors="coerce"` connects the two modules, because it converts bad values into the missing values you already know how to fill or drop.
 
 ---
 
-<!-- ===== NEW MATERIAL (v3) — begin: placeholder-detection framing ===== -->
-> **🆕 NEW in v3** — *Elevated to its own concept, per the porting notes (Week 3.2: "recognizing placeholder values that hide missingness behind a valid string"). v2 replaced `"unknown"` in passing; here it's taught explicitly. Please review.*
-
-## The Hidden Trap: Placeholders That Look Like Data
+## Handling Placeholders That Look Like Data
 
 Not all missing data announces itself as an empty cell. Datasets are full of **placeholder values** — text someone typed in when the real value wasn't available:
 
@@ -83,7 +80,6 @@ df['City'] = df['City'].replace(['N/A', 'unknown', '-', '?'], np.nan)
 ```
 
 A good habit when you first inspect a dataset: run `value_counts()` on suspicious columns and *look* for these placeholders before you trust any summary.
-<!-- ===== NEW MATERIAL (v3) — end ===== -->
 
 ---
 
