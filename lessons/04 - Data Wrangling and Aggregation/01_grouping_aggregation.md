@@ -109,7 +109,7 @@ That two-level header is the key difference: a **single function** per column gi
 
 ### AI Prompt: Predict-then-Check
 
-The shape of an `agg()` result trips up a lot of beginners. Study this without running it:
+The shape of an `agg()` result is a common source of confusion. Study this without running it:
 
 ```python
 import pandas as pd
