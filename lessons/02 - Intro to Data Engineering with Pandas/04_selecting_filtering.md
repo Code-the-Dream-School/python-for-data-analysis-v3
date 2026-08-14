@@ -205,6 +205,15 @@ Our tidy example has no gaps, so every count is `0`. On real data, this one line
 
 ---
 
+## Videos
+
+Two videos from Corey Schafer's Pandas series cover the two halves of this module:
+
+* [Python Pandas Tutorial (Part 2): Selecting Rows and Columns](https://www.youtube.com/watch?v=zmdjNSmRXF4) — `.loc`, `.iloc`, and column selection.
+* [Python Pandas Tutorial (Part 4): Filtering — Using Conditionals to Filter Rows and Columns](https://www.youtube.com/watch?v=Lw2rlcxScZY) — boolean filtering, including combining conditions with `&` and `|`.
+
+---
+
 ### AI Prompt: Predict-then-Check
 
 `.loc` and `.iloc` look similar but slice differently. Study this code without running it:
