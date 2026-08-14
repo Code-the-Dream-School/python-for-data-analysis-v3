@@ -55,7 +55,7 @@ pd.merge(people, scores, on='ID', how='left')
 # 2   3  Charlie    NaN     ← no matching score, so NaN
 ```
 
-The rule: when a row has no match on the other side, its new columns fill with `NaN`. A **left** merge is the everyday workhorse — "keep all my records, and attach any matching info I have" (for example, all customers, plus order totals for those who ordered).
+When a row has no match on the other side, its new columns fill with `NaN`. A **left** merge is the most common choice: it keeps all records from the left frame and attaches matching information where it exists (for example, all customers, plus order totals for those who ordered).
 
 ---
 
