@@ -88,7 +88,8 @@ The three common strategies:
 * **The mean** — a reasonable center for roughly symmetric numeric data, but it's pulled by extreme values.
 * **The median** — a safer center when the data has outliers, because it isn't dragged around by them.
 
-> **Filling has a cost.** Replacing every missing `Age` with the mean makes the column *look* complete, but it quietly shrinks the natural variation in the data and can pile many identical values at one point. Fill because it's the right call for your analysis, not just to make the `NaN`s disappear.
+>> [!Note]
+>> **Filling has a cost.** Replacing every missing `Age` with the mean makes the column *look* complete, but it reduces the natural variation in the data and can produce many identical values at one point. Fill a column because it is the right choice for your analysis, not only to remove the `NaN`s.
 
 ---
 
