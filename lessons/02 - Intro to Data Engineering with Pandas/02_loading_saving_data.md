@@ -242,6 +242,12 @@ Before you run it:
 
 ---
 
+## Videos
+
+* [Python Pandas Tutorial (Part 11): Reading/Writing Data to Different Sources — CSV, JSON, Excel, SQL](https://www.youtube.com/watch?v=N6hyN6BW6ao) — Corey Schafer on loading and saving data across formats.
+
+---
+
 ## Check for Understanding
 
 **1. Which function loads data from a JSON file into a DataFrame?**
