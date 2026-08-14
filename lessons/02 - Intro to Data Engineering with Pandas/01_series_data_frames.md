@@ -244,9 +244,9 @@ Now that you have met the two core structures, put the difference into your own 
 
 ## Videos
 
-In this video, we walk through what Pandas is and why it is so useful for data work. The demonstration uses a Jupyter notebook, which behaves just like the Kaggle notebooks you are using in this course.
+Corey Schafer's Pandas series (a favorite from Python Intro) opens with exactly this material:
 
-**[Video: What is Pandas? Why and How to Use It in Python](https://youtu.be/dcqPhpY7tWk?feature=shared)**
+* [Python Pandas Tutorial (Part 1): Getting Started with Data Analysis](https://www.youtube.com/watch?v=ZyhVh-qRZPA) — what a Series and a DataFrame are, and how they relate.
 
 ---
 
