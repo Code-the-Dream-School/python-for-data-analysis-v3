@@ -87,8 +87,6 @@ Choose one of these four curated datasets. All four are available on Kaggle, so 
 - **[Life Expectancy (WHO)](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who)** — health and economic indicators by country and year.
 - **[Seattle Airbnb Open Data](https://www.kaggle.com/datasets/airbnb/seattle)** — listings, prices, availability, and reviews.
 
-If you would prefer a different dataset, you may request approval for an alternative from your CIL before submitting your proposal.
-
 ### **Write `proposal.md`**
 
 Create a file named `proposal.md` (about one page) that answers four questions:
@@ -97,8 +95,6 @@ Create a file named `proposal.md` (about one page) that answers four questions:
 2. **Question** — the main question you plan to answer with it. A good question is specific enough to answer with the columns available (for example, "Which product categories are most profitable by region?" rather than "What is interesting about sales?").
 3. **Feasibility** — why the dataset can answer your question. Name a few columns you will use and confirm the dataset is large enough and clean enough to work with.
 4. **Expected insights** — what you expect to find, or a hypothesis you want to test.
-
-Your CIL will review the proposal to make sure the project is feasible before you invest more time in it.
 
 ### **Submit the Proposal as a Pull Request**
 
