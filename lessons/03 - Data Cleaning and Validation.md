@@ -2,7 +2,7 @@
 
 **Lesson Overview**
 
-Week 2 ended with a question: `isna().sum()` showed you *where* the gaps were, but not what to do about them. This week is the answer. Real-world data arrives messy — missing values, numbers stored as text, dates in five formats, inconsistent spellings, duplicates, and values that are simply impossible. **Data cleaning** is the disciplined work of turning that mess into something you can trust, and it's where data professionals spend much of their time. You'll handle missing data, fix column types, reshape values, standardize text with the regex you learned in Week 1, and validate what's left against the rules of the real world. The guiding idea is an old one: *garbage in, garbage out* — the quality of your analysis can never exceed the quality of your data.
+Real-world data arrives messy: missing values, numbers stored as text, dates in five formats, inconsistent spellings, duplicates, and values that are simply impossible. **Data cleaning** is the disciplined work of turning that mess into something you can trust, and it's where data professionals spend much of their time. You'll handle missing data, fix column types, reshape values, standardize text with the regex you learned in Week 1, and validate what's left against the rules of the real world. The guiding idea is an old one: *garbage in, garbage out*. The quality of your analysis can never exceed the quality of your data.
 
 This week's work happens in **Kaggle notebooks**, and your assignment is submitted as a Kaggle notebook.
 
