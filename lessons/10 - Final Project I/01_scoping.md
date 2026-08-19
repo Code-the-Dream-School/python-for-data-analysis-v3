@@ -59,7 +59,7 @@ Having this outline means each later module fills in a section you have already 
 
 ## Self-Check
 
-This module supports the **Insights and Interpretation** and **Communication** categories of the [Phase 1 rubric](../../resources/final-project-overview.md). Before moving on, confirm:
+This module supports the **Insights and Interpretation** and **Communication** categories of the [Phase 1 rubric](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Before moving on, confirm:
 
 - [ ] I can state my project's question in one sentence.
 - [ ] I have three or more specific questions my analysis will answer.
