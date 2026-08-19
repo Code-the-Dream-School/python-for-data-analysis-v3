@@ -4,7 +4,7 @@
 
 This is Phase 2, the final week of the course. Last week you produced an analysis and a `summary.md`; this week you turn that work into an interactive **Streamlit dashboard**, deploy it to the web, and record a short presentation. Everything you need is already in hand: the cleaned data you committed in Week 10, the Streamlit skills from Week 9, and `summary.md`, which becomes your presentation script.
 
-**Before you begin, review the [Final Project Overview](../resources/final-project-overview.md)** for the full arc and the rubric. This week is graded against the **Phase 2 rubric**.
+**Before you begin, review the [Final Project Overview](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md)** for the full arc and the rubric. This week is graded against the **Phase 2 rubric**.
 
 **Learning Objectives**
 
