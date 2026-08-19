@@ -48,15 +48,6 @@ Having this outline means each later module fills in a section you have already 
 
 ---
 
-## Common Pitfalls
-
-* **A question too broad to answer.** "What's interesting here?" has no endpoint. Narrow it until you can name the columns involved.
-* **A question the data can't support.** Check that the fields you need exist and are populated before committing to a question.
-* **Jumping straight to code.** Without a plan, you will write analysis you throw away. Outline first.
-* **Ignoring the Week 8 milestone.** Your SQLite queries are a head start on the analysis — reuse them rather than starting over.
-
----
-
 ## Self-Check
 
 This module supports the **Insights and Interpretation** and **Communication** categories of the [Phase 1 rubric](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Before moving on, confirm:
