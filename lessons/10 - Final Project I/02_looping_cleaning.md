@@ -50,7 +50,7 @@ You will need the cleaned dataset again in Phase 2, for the dashboard. Save it t
 
 ## Self-Check
 
-This module supports the **Data Preparation** category of the [Phase 1 rubric](../../resources/final-project-overview.md). Before moving on, confirm:
+This module supports the **Data Preparation** category of the [Phase 1 rubric](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Before moving on, confirm:
 
 - [ ] My dataset is loaded and I have inspected it.
 - [ ] I have handled missing values, types, text, and duplicates as my data needed.
