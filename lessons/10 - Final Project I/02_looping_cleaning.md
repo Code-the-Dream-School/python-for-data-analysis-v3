@@ -39,15 +39,6 @@ You will need the cleaned dataset again in Phase 2, for the dashboard. Save it t
 
 ---
 
-## Common Pitfalls
-
-* **Cleaning without documenting.** Undocumented cleaning loses rubric credit and makes your work hard to trust. Explain each decision.
-* **Over-cleaning.** Deleting outliers or rows without checking can remove real, meaningful data. Investigate before you remove (Week 3.5).
-* **Placeholder values that look valid.** `"unknown"`, `"N/A"`, or `0` used as a stand-in will quietly distort your analysis if you don't convert them to `NaN` first.
-* **Forgetting to save the cleaned data.** Phase 2's dashboard reads this file — if you don't save and commit it, you will redo the cleaning next week.
-
----
-
 ## Self-Check
 
 This module supports the **Data Preparation** category of the [Phase 1 rubric](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Before moving on, confirm:
