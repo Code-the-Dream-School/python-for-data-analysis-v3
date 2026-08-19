@@ -63,10 +63,6 @@ To deploy:
 4. **Create a new app**, choose your repository, branch, and the path to your app file (for example, `assignment9/dashboard_app.py`).
 5. **Deploy.** After it builds, you get a public URL you can share.
 
-<!-- ===== NEW MATERIAL (v3) — begin: why the practice deployment matters ===== -->
-> **🆕 NEW in v3 — why this practice deployment matters.** *In the final project you will deploy a dashboard as a graded submission. Deploying a small, throwaway app now means that, by the final week, deployment is a procedure you have already done rather than a first-time task under deadline. This rehearsal is deliberate — do it even though this app is disposable.*
-<!-- ===== NEW MATERIAL (v3) — end ===== -->
-
 Deploy the simple dashboard above now, confirm the public URL works, and note the steps. You will follow the same procedure for your project dashboard in Week 11.
 
 ---
