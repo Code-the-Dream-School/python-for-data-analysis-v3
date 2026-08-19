@@ -43,15 +43,6 @@ Three well-chosen, well-explained charts beat ten unfocused ones. Each should ea
 
 ---
 
-## Common Pitfalls
-
-* **Charts without interpretation.** A picture with no explanation is not a finding. State what each chart shows.
-* **Analysis that drifts from the question.** Every aggregation and chart should serve the question you scoped, not wander off into unrelated views.
-* **Too many unfocused charts.** Quantity is not the goal. A few charts that each support a clear point are stronger than many that don't.
-* **Poor chart choices.** A pie chart with many slices or a line chart on categories misleads. Revisit Week 5.1 when unsure.
-
----
-
 ## Self-Check
 
 This module supports the **Analysis and Aggregation**, **Visualization**, and **Insights and Interpretation** categories of the [Phase 1 rubric](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Before moving on, confirm:
