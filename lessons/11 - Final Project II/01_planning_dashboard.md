@@ -44,15 +44,6 @@ Having this sketch means building the dashboard (Module 11.2) is filling in a la
 
 ---
 
-## Common Pitfalls
-
-* **Recreating the whole notebook.** A dashboard is not your analysis pasted into Streamlit. Choose the few views that benefit from interaction.
-* **Too many filters.** Each filter adds complexity for the user. Keep to two or three that matter.
-* **Filters with no data behind them.** Every filter must map to a real column in your cleaned dataset. Confirm the column exists before planning around it.
-* **No plan.** Building without a layout sketch leads to a cluttered page you rearrange repeatedly.
-
----
-
 ## Self-Check
 
 This module supports the **Dashboard and Interactivity** category of the [Phase 2 rubric](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Before moving on, confirm:
