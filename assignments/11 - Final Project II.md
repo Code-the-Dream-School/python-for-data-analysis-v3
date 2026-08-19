@@ -1,6 +1,6 @@
 # Assignment 11 — Final Project II: Dashboard and Presentation
 
-This is Phase 2 of the final project. Before you begin, review the [Final Project Overview](../resources/final-project-overview.md) for the full arc and both rubrics. This week is graded against the **Phase 2 rubric**.
+This is Phase 2 of the final project. Before you begin, review the [Final Project Overview](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md) and both rubrics. This week is graded against the **Phase 2 rubric**.
 
 ## Requirements
 
