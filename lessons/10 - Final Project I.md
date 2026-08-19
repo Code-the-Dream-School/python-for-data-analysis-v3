@@ -19,22 +19,22 @@ This week, I can...
 
 ## Topics
 
-1. **[Scoping Your Analysis](<10 - Final Project I/01_scoping.md>)**
+1. **[Scoping Your Analysis](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/lessons/10%20-%20Final%20Project%20I/01_scoping.md)**
 
    Revisiting your proposal, sharpening your question, deciding what counts as an insight, and planning the structure of your notebook.
 
-2. **[Loading and Cleaning Your Dataset](<10 - Final Project I/02_loading_cleaning.md>)**
+2. **[Loading and Cleaning Your Dataset](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/lessons/10%20-%20Final%20Project%20I/02_looping_cleaning.md)**
 
    Loading your dataset and applying the Week 3 cleaning tools, with every decision documented in markdown and the cleaned data saved for Phase 2.
 
-3. **[Analysis and Visualization](<10 - Final Project I/03_analysis_visualization.md>)**
+3. **[Analysis and Visualization](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/lessons/10%20-%20Final%20Project%20I/03_analysis_visualization.md)**
 
    Answering your question with aggregations, derived features, and your Week 8 queries, and supporting each finding with a clear, well-labeled chart.
 
-4. **[Writing Up Your Findings](<10 - Final Project I/04_writeup.md>)**
+4. **[Writing Up Your Findings](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/lessons/10%20-%20Final%20Project%20I/04_writeup.md)**
 
    Writing `summary.md` — the question, the data, the findings, and the limitations — which also becomes the script for your Week 11 presentation.
 
 ## Submitting This Week
 
-This week has two submissions: your **Kaggle notebook** (the analysis) and a **pull request** to your project repository containing `summary.md` and your cleaned data. The requirements and the Phase 1 rubric are on the [assignment page](../assignments/10 - Final Project I.md).
+This week has two submissions: your **Kaggle notebook** (the analysis) and a **pull request** to your project repository containing `summary.md` and your cleaned data. The requirements and the Phase 1 rubric are on the assignment page.
