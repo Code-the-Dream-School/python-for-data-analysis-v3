@@ -1,6 +1,6 @@
 # Assignment 10 — Final Project I: Pipeline and Analysis
 
-This is Phase 1 of the final project. Before you begin, read the [Final Project Overview](../resources/final-project-overview.md) for the two-week arc, the dataset options, and both rubrics. This week is graded against the **Phase 1 rubric**.
+This is Phase 1 of the final project. Make sure you've read the [Final Project Overview](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md) for the two-week arc, the dataset options, and both rubrics. This week is graded against the **Phase 1 rubric**.
 
 ## Requirements
 
