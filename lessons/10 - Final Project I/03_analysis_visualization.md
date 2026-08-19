@@ -54,7 +54,7 @@ Three well-chosen, well-explained charts beat ten unfocused ones. Each should ea
 
 ## Self-Check
 
-This module supports the **Analysis and Aggregation**, **Visualization**, and **Insights and Interpretation** categories of the [Phase 1 rubric](../../resources/final-project-overview.md). Before moving on, confirm:
+This module supports the **Analysis and Aggregation**, **Visualization**, and **Insights and Interpretation** categories of the [Phase 1 rubric](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Before moving on, confirm:
 
 - [ ] My analysis uses at least two aggregations or derived features.
 - [ ] I have at least three charts, each appropriate and fully labeled.
