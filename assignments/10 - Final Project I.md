@@ -40,4 +40,4 @@ Paste both links into the two fields on the **assignment submission form**.
 
 ## Rubric
 
-This week is graded against the **Phase 1 rubric** in the [Final Project Overview](../resources/final-project-overview.md#phase-1-rubric--week-10-pipeline-and-analysis). Review it before submitting — it covers Data Preparation, Analysis and Aggregation, Visualization, Insights and Interpretation, and Communication and Reproducibility.
+This week is graded against the **Phase 1 rubric** in the [Final Project Overview](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Review it before submitting — it covers Data Preparation, Analysis and Aggregation, Visualization, Insights and Interpretation, and Communication and Reproducibility.
