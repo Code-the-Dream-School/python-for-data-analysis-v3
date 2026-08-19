@@ -44,4 +44,4 @@ Open the pull request and paste its link into the **assignment submission form**
 
 ## Rubric
 
-This week is graded against the **Phase 2 rubric** in the [Final Project Overview](../resources/final-project-overview.md#phase-2-rubric--week-11-dashboard-and-presentation). Review it before submitting — it covers Dashboard and Interactivity, Dashboard Visualizations, Deployment, Repository and Documentation, and Presentation.
+This week is graded against the **Phase 2 rubric** in the [Final Project Overview](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Review it before submitting — it covers Dashboard and Interactivity, Dashboard Visualizations, Deployment, Repository and Documentation, and Presentation.
