@@ -41,15 +41,6 @@ Committing the cleaned data now means Phase 2's dashboard has something to read 
 
 ---
 
-## Common Pitfalls
-
-* **Describing what you did instead of what you found.** "I grouped by genre and made a bar chart" is a method, not a finding. State the result.
-* **No limitations.** Every analysis has them. Omitting them reads as overconfidence and loses rubric credit.
-* **Findings not supported by the analysis.** Every claim in the summary should trace back to a chart or number in your notebook.
-* **Forgetting the cleaned data.** The pull request needs both `summary.md` and the cleaned data file — Phase 2 depends on the data being there.
-
----
-
 ## Self-Check
 
 This module supports the **Insights and Interpretation** and **Communication and Reproducibility** categories of the [Phase 1 rubric](../../resources/final-project-overview.md). Before submitting, confirm:
