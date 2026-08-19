@@ -6,7 +6,7 @@ The final project spans two weeks, and this is Phase 1. In a Kaggle notebook, yo
 
 You are not starting cold. Your project repository was created with the Week 5 proposal, and your Week 8 milestone already loaded the data into SQLite and ran analytical queries against it. This week brings those threads together into a finished pipeline.
 
-**Before you begin, read the [Final Project Overview](../resources/final-project-overview.md)** for the full two-week arc, the dataset options, and the rubric your work is graded against. The Phase 1 rubric is what this week is evaluated on.
+**Before you begin, read the [Final Project Overview](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md)** for the full two-week arc, the dataset options, and the rubric your work is graded against. The Phase 1 rubric is what this week is evaluated on.
 
 **Learning Objectives**
 
