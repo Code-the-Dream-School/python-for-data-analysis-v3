@@ -43,7 +43,7 @@ Committing the cleaned data now means Phase 2's dashboard has something to read 
 
 ## Self-Check
 
-This module supports the **Insights and Interpretation** and **Communication and Reproducibility** categories of the [Phase 1 rubric](../../resources/final-project-overview.md). Before submitting, confirm:
+This module supports the **Insights and Interpretation** and **Communication and Reproducibility** categories of the [Phase 1 rubric](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/resources/final_project_overview.md). Before submitting, confirm:
 
 - [ ] `summary.md` covers the question, the data, the findings, and the limitations.
 - [ ] It states at least three findings, each tied to a chart.
