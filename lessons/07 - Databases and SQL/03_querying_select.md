@@ -40,7 +40,7 @@ def run_query(sql):
 run_query("SELECT name, age FROM Students")
 ```
 
-This helper is the notebook-friendly way to explore a database. It uses `pd.read_sql_query`, which Module 7.5 covers in full. (An interactive command-line version, `sqlcommand.py`, is available as an optional extension for those who want to type SQL at a prompt.)
+This helper is the notebook-friendly way to explore a database. It uses `pd.read_sql_query`, which Module 7.5 covers in full. For extra `SELECT` practice with no setup, the [SQLBolt](https://sqlbolt.com/) tutorial (linked in Module 7.1) is a good companion.
 
 ---
 
