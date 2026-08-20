@@ -93,10 +93,11 @@ If you would prefer a different dataset, you may request approval for an alterna
 
 ### **Set Up Your Project Repository**
 
-You will build the project in its own repository, set up the **same way you set up `python_homework` in Week 1**. Code the Dream provides a **`python_final_project`** starter that already contains the skeleton files you'll fill in across Weeks 5, 10, and 11 (a `proposal.md`, a `summary.md`, a `README.md`, a `requirements.txt`, and a dashboard stub).
+You will build the project in its own repository, set up the **same way you set up `python_homework` in Week 1**. Our starter **`python_final_project`** repository that contains the skeleton files you'll fill in across Weeks 5, 10, and 11 (a `proposal.md`, a `summary.md`, a `README.md`, a `requirements.txt`, and a dashboard stub).
 
-1. On GitHub, create your own public repository named `python_final_project`.
-2. Clone Code the Dream's `python_final_project` starter, then reset the remotes so `origin` points at *your* repository (exactly as you did for `python_homework`), and push.
+1. Access the starter final project repository: https://github.com/reidrussom/python-for-data-analysis-final-project/tree/main
+2. On GitHub, create your own public repository named `python_final_project`.
+3. Clone Code the Dream's `python_final_project` starter, then reset the remotes so `origin` points at *your* repository (exactly as you did for `python_homework`), and push.
 
 ### **Write Your Proposal**
 
