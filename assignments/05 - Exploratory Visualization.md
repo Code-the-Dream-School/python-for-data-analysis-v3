@@ -1,4 +1,4 @@
-## Lesson 5 Assignment — Exploratory Visualization
+# Lesson 5 Assignment — Exploratory Visualization
 
 This week has **two submissions**:
 
@@ -9,7 +9,7 @@ Both are described below. You will submit one Kaggle link (Part A) and one pull 
 
 ---
 
-# Part A — Visualization Assignment
+## Part A — Visualization Assignment
 
 Complete Part A in a Kaggle notebook. As usual, mark the code for each task with a markdown cell, and use markdown cells to record what each chart shows.
 
@@ -71,7 +71,7 @@ Suppose the columns you care about most are `Diabetes_012`, `HeartDiseaseorAttac
 
 ---
 
-# Part B — Final Project Proposal
+## Part B — Final Project Proposal
 
 This week you begin the **final project**. The project runs in two phases later in the course:
 
