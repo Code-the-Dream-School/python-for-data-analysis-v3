@@ -28,7 +28,7 @@ This confirms your Kaggle environment is ready for Week 2.
 
 # Part B — Python Skills
 
-Do Part B in your `python_homework` repository. If you haven't created this already, return to [1.1 - Setting Up for Data Work](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/lessons/01%20-%20Advanced%20Python%20and%20Regex/01_setting_up.md)
+Do Part B in your `python_homework` repository. If you haven't created this already, return to [1.1 - Setting Up for Data Work](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/lessons/01%20-%20Advanced%20Python%20and%20Regex/01_setting_up.md).
 
 **Setup:**
 
