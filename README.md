@@ -19,7 +19,12 @@ Check out our [contributing guidelines](https://github.com/Code-the-Dream-School
 
 ## Additional Links
 
+Homework and Final Project Repositories:
+
 * [Homework Repo](https://github.com/Code-the-Dream-School/python-for-data-analysis-homework)
+* [Final Project Repo](https://github.com/reidrussom/python-for-data-analysis-final-project)
+
+Other Links:
 * [CTD Instructional Design Guidelines](https://docs.google.com/document/d/1u38QtHKfGeXwJf1yTYAyx0YK3yvit5dK6rhM0PZjx8c/edit?usp=sharing)
 * [Previous version of curriculum](https://github.com/Code-the-Dream-School/python-essentials-v2)
 
