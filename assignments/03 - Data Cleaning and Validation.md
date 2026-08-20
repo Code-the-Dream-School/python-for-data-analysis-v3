@@ -25,8 +25,7 @@ Do this assignment in a **Kaggle notebook** (the same environment as Week 2).
 ### **Task 1: Handling Missing Data**
 
 1. **Load the provided dataset:**
-   - Add an input dataset by searching for **"code the dream lesson 5"** (use **Add Input**).
-   - Read the file into a DataFrame called `df` and print it.
+   - Add the **Code the Dream Assignment 3** dataset with **Add Input**, and read its `employees.csv` file into a DataFrame called `df`. Print it.
    - The DataFrame has columns `Name`, `Age`, `Salary`, `Join Date`, and `City`, with some missing values.
 
    Here's roughly what the data looks like (for reference — don't paste this in):
@@ -55,8 +54,7 @@ Do this assignment in a **Kaggle notebook** (the same environment as Week 2).
 ### **Task 2: Data Types and Dates**
 
 1. **Parse a messy date column:**
-   - Add another input by searching for **"Code The Dream Eclipses"** — a list of eclipses observed in Arkansas.
-   - Load the CSV into a DataFrame called `df3`. **Note:** the separator for this file is `|`, so use `sep='|'`.
+   - From the same **Code the Dream Assignment 3** dataset, read the `eclipses.csv` file — a list of eclipses observed in Arkansas — into a DataFrame called `df3`. **Note:** the separator for this file is `|`, so use `sep='|'`.
    - Run `df3.info()` and show the first 5 rows.
    - Try converting the `Date` column with `pd.to_datetime()` — you'll see Pandas raise an error on an invalid date.
    - Add `errors='coerce'` and try again. Print the first 20 rows and look at what's stored for the dates that couldn't be converted (they become `NaT`).
@@ -160,26 +158,28 @@ messy = {
 customers = pd.DataFrame(messy)
 ```
 
-**Your steps**:
+**Your steps** (this is less prescriptive than the earlier tasks — you choose the specific methods):
 
 1. **Inspect and diagnose.** Run your first-look routine (`shape`, `head`, `info`, `isna().sum()`). In a **markdown cell**, list every data-quality problem you can spot, column by column.
 2. **Keep a raw copy** before you change anything (`raw = customers.copy()`).
 3. **Fix types and placeholders.** Convert `age` and `spend` to numeric and `signup_date` to a real datetime, turning placeholders (`'unknown'`, `'N/A'`) and impossible dates (`'Feb 30'`) into proper missing values along the way.
 4. **Standardize text.** Clean `name` and `city` so that casing, whitespace, and abbreviations (`'NYC'`, `'LA'`, `'chicago '`) collapse into consistent values. Confirm with `value_counts()`.
-5. **Remove duplicates.** The customer with `customer_id` 103 appears twice. Decide how to handle it.
-6. **Validate and handle outliers.** Ages should be plausible (say, 18–100) and `spend` shouldn't be negative. Decide what to do with the `age` of 150 and the `spend` of 9,999,999, and say whether you treated each as an error or a real extreme.
+5. **Remove duplicates.** The customer with `customer_id` 103 appears twice — decide how to handle it.
+6. **Validate and handle outliers.** Ages should be plausible (say, 18–100) and `spend` shouldn't be negative. Decide what to do with the `age` of 150 and the `spend` of 9,999,999 — and say whether you treated each as an error or a real extreme.
 7. **Handle remaining missing values**, filling or dropping with a justification for each choice.
 8. **Derive a new column.** Add a `spend_band` column (`'Low'` / `'Medium'` / `'High'`) using `.apply()` or `.map()` with a rule of your choosing.
 9. **Finish with a short markdown reflection:** what the biggest problems were, which decisions were judgment calls, and how you'd automate this cleaning if the file arrived every week.
 
-Print the cleaned DataFrame and a final `isna().sum()`.
+Print the cleaned DataFrame and a final `isna().sum()` so your reviewer can see the end state.
 
-> There isn't one "correct" cleaned dataset here. Reasonable people would make different calls on the outliers and the missing city. What's being assessed is that your choices are sensible **and clearly explained**.
+> There isn't one "correct" cleaned dataset here — reasonable people would make different calls on the outliers and the missing city. What's being assessed is that your choices are sensible **and clearly explained**.
 
 ---
 
 ### **Submit Your Assignment**
 
-1. **Save your work.** In the upper right, click **Save Version**. Make sure the notebook runs top to bottom without errors.
+1. **Save your work.** In the upper right, click **Save Version** and save (a quick save is fine). Make sure the notebook runs top to bottom without errors.
 2. **Get a sharing link.** Click **Share**, choose **Public**, make sure **Allow Comments** is on, and copy the public URL.
 3. **Submit the link.** Paste the URL into the **assignment submission form**.
+
+---
