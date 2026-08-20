@@ -45,7 +45,7 @@ A **Kaggle notebook** runs Python in your browser, with the common data librarie
 
 Some weeks run Python on your own computer rather than in the cloud. For those, you use the **`python_homework`** repository. We'll it up once now.
 
-Follow this link [LINK TBD]() to the homework repository. To use this repository:
+Follow [this link](https://github.com/Code-the-Dream-School/python-for-data-analysis-homework) to the homework repository. To use this repository:
 
 1. Sign into your GitHub, and create a repository called python_homework. It must be a public repository. You don't need to create a `.gitignore` or a `README.md.`
 2. On your computer, clone the repository. (Do not clone the repository you just created.)
