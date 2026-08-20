@@ -1,9 +1,10 @@
-## Lesson 4 Assignment — Data Wrangling and Aggregation with Pandas
+## Lesson 4 Assignment — Data Wrangling and Aggregation
 
 ### **Objective:**
 This assignment deepens your data-wrangling skills: selecting and filtering, aggregating with `groupby`, building pivot tables, applying row-wise logic, merging and joining, engineering new features, and combining messy files. The early tasks are focused drills; the later ones are small integrative projects on real Kaggle datasets.
 
-> **Note:** Tasks 3 and 4 are mini-labs on independent Kaggle datasets — do them together, then resume Task 5. The final tasks (12–14) are integrative mini-projects on real datasets.
+> [!Note]
+> Tasks 3 and 4 are mini-labs on independent Kaggle datasets — do them together, then resume Task 5. The final tasks (12–14) are integrative mini-projects on real datasets.
 
 ### **Setup**
 
