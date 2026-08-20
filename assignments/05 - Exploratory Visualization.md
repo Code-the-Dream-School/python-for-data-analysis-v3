@@ -5,6 +5,8 @@ This week has **two submissions**:
 - **Part A — Visualization Assignment:** a Kaggle notebook exploring the Diabetes Health Indicators dataset.
 - **Part B — Final Project Proposal:** a short `proposal.md` submitted as a pull request, which also creates your project repository.
 
+Both are described below. You will submit one Kaggle link (Part A) and one pull request link (Part B).
+
 ---
 
 # Part A — Visualization Assignment
@@ -71,39 +73,47 @@ Suppose the columns you care about most are `Diabetes_012`, `HeartDiseaseorAttac
 
 # Part B — Final Project Proposal
 
-This week you submit a proposal for your **final project**. The project runs in two phases later in the course:
+This week you begin the **final project**. The project runs in two phases later in the course:
 
 - **Phase 1 (Week 10):** a data pipeline and analysis in a Kaggle notebook — load, clean, wrangle, visualize, and write up findings.
 - **Phase 2 (Week 11):** an interactive dashboard built from your analysis and deployed to the web.
 
-You have the tools for Phase 1 already - that is why the project starts now, while the load–clean–wrangle–visualize skills are fresh. This week's deliverable is a short **proposal** that commits you to a dataset and a question.
+You have the tools for Phase 1 already — that is why the project starts now, while the load–clean–wrangle–visualize skills are fresh. This week's deliverable is a short **proposal** that commits you to a dataset and a question.
 
 ### **Choose a Dataset**
 
 Choose one of these four curated datasets. All four are available on Kaggle, so you can add them to a notebook with **Add Input** and no downloading:
 
-- **[Global Superstore](https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset)** — retail orders, sales, and profit across regions and categories.
-- **[TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)** — movies with budget, revenue, genres, and ratings.
-- **[Life Expectancy (WHO)](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who)** — health and economic indicators by country and year.
-- **[Seattle Airbnb Open Data](https://www.kaggle.com/datasets/airbnb/seattle)** — listings, prices, availability, and reviews.
+- **Global Superstore** — retail orders, sales, and profit across regions and categories.
+- **TMDB 5000 Movie Dataset** — movies with budget, revenue, genres, and ratings.
+- **Life Expectancy (WHO)** — health and economic indicators by country and year.
+- **Seattle Airbnb Open Data** — listings, prices, availability, and reviews.
 
-### **Write `proposal.md`**
+If you would prefer a different dataset, you may request approval for an alternative from your CIL before submitting your proposal. Class sizes make free dataset choice hard to support, and you will have full dataset choice in a later course.
 
-Create a file named `proposal.md` (about one page) that answers four questions:
+### **Set Up Your Project Repository**
+
+You will build the project in its own repository, set up the **same way you set up `python_homework` in Week 1**. Code the Dream provides a **`python_final_project`** starter that already contains the skeleton files you'll fill in across Weeks 5, 10, and 11 (a `proposal.md`, a `summary.md`, a `README.md`, a `requirements.txt`, and a dashboard stub).
+
+1. On GitHub, create your own public repository named `python_final_project`.
+2. Clone Code the Dream's `python_final_project` starter, then reset the remotes so `origin` points at *your* repository (exactly as you did for `python_homework`), and push.
+
+### **Write Your Proposal**
+
+Open the `proposal.md` file already in your repository and fill in its four sections (about one page total):
 
 1. **Dataset** — which dataset you chose.
 2. **Question** — the main question you plan to answer with it. A good question is specific enough to answer with the columns available (for example, "Which product categories are most profitable by region?" rather than "What is interesting about sales?").
 3. **Feasibility** — why the dataset can answer your question. Name a few columns you will use and confirm the dataset is large enough and clean enough to work with.
 4. **Expected insights** — what you expect to find, or a hypothesis you want to test.
 
+Your CIL will review the proposal to make sure the project is feasible before you invest more time in it.
+
 ### **Submit the Proposal as a Pull Request**
 
-Submitting the proposal also creates the GitHub repository you will use for the project in Weeks 10 and 11.
-
-1. Create a new GitHub repository for your project (for example, `py100-final-project`).
-2. Add your `proposal.md` file on a new branch.
-3. Open a pull request for that branch.
-4. Copy the pull request URL for submission.
+1. Create a branch, commit your completed `proposal.md`, and push it to your repository.
+2. Open a pull request **in your own `python_final_project` repository** (the base repository should be your username, not `Code-the-Dream-School`).
+3. Copy the pull request URL for submission.
 
 ---
 
