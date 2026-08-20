@@ -7,7 +7,7 @@ This week has **two submissions**:
 
 ---
 
-# Part A — Kaggle Setup Check
+### Part A — Kaggle Setup Check
 
 1. If you haven't already, create a free [Kaggle](https://www.kaggle.com) account and **verify your phone number** (in account settings), which enables attaching datasets and internet access.
 2. Create a new notebook named `CTD_Assignment_1`.
@@ -26,7 +26,7 @@ This confirms your Kaggle environment is ready for Week 2.
 
 ---
 
-# Part B — Python Skills
+### Part B — Python Skills
 
 Do Part B in your `python_homework` repository. If you haven't created this already, return to [1.1 - Setting Up for Data Work](https://github.com/Code-the-Dream-School/python-for-data-analysis-v3/blob/main/lessons/01%20-%20Advanced%20Python%20and%20Regex/01_setting_up.md).
 
@@ -41,7 +41,7 @@ Do Part B in your `python_homework` repository. If you haven't created this alre
    ```
 3. Do your work in the `assignment1` folder, marking each task with a comment.
 
-### Task 1: Regular Expressions
+#### Task 1: Regular Expressions
 
 Using the `re` module:
 
@@ -49,14 +49,14 @@ Using the `re` module:
 2. From the phone string `"(212) 555-1234"`, use `re.sub` to remove every non-digit character, leaving just the digits.
 3. From the string `"Date: 2021-05-01"`, use a pattern with **capture groups** and `re.search` to extract the year, month, and day separately, and print all three.
 
-### Task 2: File Paths
+#### Task 2: File Paths
 
 Using `pathlib`:
 
 1. Build a path to `data/sales.csv` with the `/` operator, and print its `.name`, `.stem`, `.suffix`, and `.parent`.
 2. Create two small text files in a folder (for example, `data/a.txt` and `data/b.txt`), then use `glob` to list every `.txt` file in that folder and print each file's name.
 
-### Task 3: Parsing Messy Data
+#### Task 3: Parsing Messy Data
 
 You are given records as lines of text, some of them malformed:
 
@@ -76,7 +76,7 @@ Carlos, 41, Chicago
 
 ---
 
-## Submit Your Work
+### Submit Your Work
 
 You submit **two links** this week:
 
