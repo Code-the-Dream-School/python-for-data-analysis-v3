@@ -1,4 +1,4 @@
-## Lesson 3 Assignment — Data Cleaning and Validation with Pandas
+## Lesson 3 Assignment — Data Cleaning and Validation
 
 ### **Objective:**
 In this assignment, you will gain hands-on experience cleaning and validating a real-world dataset with Pandas: handling missing values, correcting data types, parsing messy dates, validating ranges, removing duplicates and outliers, standardizing inconsistent text, and using regular expressions. The guided tasks build the individual skills; the closing mini-project asks you to put them together on a single messy dataset and document your decisions.
