@@ -3,8 +3,7 @@
 ### **Objective:**
 This assignment deepens your data-wrangling skills: selecting and filtering, aggregating with `groupby`, building pivot tables, applying row-wise logic, merging and joining, engineering new features, and combining messy files. The early tasks are focused drills; the later ones are small integrative projects on real Kaggle datasets.
 
-> [!Note]
-> Tasks 3 and 4 are mini-labs on independent Kaggle datasets. Do them together, then resume Task 5. The final tasks (12–14) are integrative mini-projects on real datasets.
+> **Note:** Tasks 3 and 4 are mini-labs on independent Kaggle datasets — do them together, then resume Task 5. The final tasks (12–14) are integrative mini-projects on real datasets.
 
 ### **Setup**
 
@@ -144,11 +143,13 @@ For this task, you'll find the international teams that are weakest on defense.
 
 Starting from the `football_results` DataFrame you built in Task 12, print the most recent 10 games for **Tunisia**. You'll figure out the steps — remember to sort so you get the right games, and prefer creating a new DataFrame over `inplace=True`.
 
-### **Task 14: Consolidating Messy Files (Mini-Project)**
+### **Task 14 (Optional Stretch): Consolidating Messy Files**
+
+> **Optional.** This task goes a little beyond the week's lessons — it uses an external library, `thefuzz`, for approximate string matching, and `groupby().transform()`, a step past the aggregation in Module 4.1. It's here for students who want to try a realistic consolidation problem. It won't be counted against you if you skip it.
 
 Real data often arrives split across several messy files with duplicate and inconsistent records. Here you'll consolidate four files into one clean table.
 
-1. Add the input dataset **"Code The Dream Assignment 6"** → four CSV files (~400 rows each).
+1. Add the **Code the Dream Assignment 4** dataset → four CSV files (`records_part1.csv` … `records_part4.csv`, ~400 rows each).
 2. Load all four into DataFrames and `concat` them into `df_all` (~1600 rows).
 3. Install and import `thefuzz` for approximate string matching:
    ```python
@@ -187,7 +188,7 @@ Real data often arrives split across several messy files with duplicate and inco
 
 ### **Submit Your Assignment**
 
-1. **Save your work.** In the upper right, click **Save Version**. Make sure the notebook runs top to bottom without errors.
+1. **Save your work.** In the upper right, click **Save Version** and save (a quick save is fine). Make sure the notebook runs top to bottom without errors.
 2. **Get a sharing link.** Click **Share**, choose **Public**, make sure **Allow Comments** is on, and copy the public URL.
 3. **Submit the link.** Paste the URL into the **assignment submission form**.
 
